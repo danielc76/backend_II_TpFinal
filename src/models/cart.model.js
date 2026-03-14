@@ -12,7 +12,7 @@ const cartSchema = new mongoose.Schema({
         {
             product: {
                 type: mongoose.Schema.Types.ObjectId,
-                ref: "Product",
+                ref: "product", 
                 required: true
             },
 
@@ -25,4 +25,5 @@ const cartSchema = new mongoose.Schema({
 
 });
 
+// Registramos el modelo como "Cart"
 export const CartModel = mongoose.model("Cart", cartSchema);

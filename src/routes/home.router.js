@@ -10,7 +10,7 @@ const router = Router();
 */
 router.get("/", (req, res) => {
     res.status(200).json({
-        message: "🚀 Backend 2 funcionando correctamente",
+        message: "Backend 2 funcionando correctamente",
         status: "OK",
         timestamp: new Date().toISOString()
     });
